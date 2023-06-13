@@ -1,0 +1,395 @@
+root@polystudent-virtual-machine:/var/www/html# nm-connection-editor
+root@polystudent-virtual-machine:/var/www/html# nm-connection-editor
+** Message: 11:06:21.101: Cannot save connection due to error: 올바르지 않은 설정 IPv4 설정: IPv4 주소 “”(은)는 유효하지 않음
+** Message: 11:07:44.913: Connection validates and can be saved
+** Message: 11:08:16.719: Cannot save connection due to error: 올바르지 않은 설정 IPv4 설정: IPv4 DNS 서버 “8”(은)는 유효하지 않음
+** Message: 11:08:16.840: Cannot save connection due to error: 올바르지 않은 설정 IPv4 설정: IPv4 DNS 서버 “8.”(은)는 유효하지 않음
+** Message: 11:08:16.992: Cannot save connection due to error: 올바르지 않은 설정 IPv4 설정: IPv4 DNS 서버 “8.8”(은)는 유효하지 않음
+** Message: 11:08:17.119: Cannot save connection due to error: 올바르지 않은 설정 IPv4 설정: IPv4 DNS 서버 “8.8.”(은)는 유효하지 않음
+** Message: 11:08:17.249: Cannot save connection due to error: 올바르지 않은 설정 IPv4 설정: IPv4 DNS 서버 “8.8.8”(은)는 유효하지 않음
+** Message: 11:08:17.353: Cannot save connection due to error: 올바르지 않은 설정 IPv4 설정: IPv4 DNS 서버 “8.8.8.”(은)는 유효하지 않음
+** Message: 11:08:17.512: Connection validates and can be saved
+root@polystudent-virtual-machine:/var/www/html# cd
+root@polystudent-virtual-machine:~# ping -c 3 192.168.31.128
+PING 192.168.31.128 (192.168.31.128) 56(84) bytes of data.
+
+--- 192.168.31.128 ping statistics ---
+3 packets transmitted, 0 received, 100% packet loss, time 2037ms
+
+root@polystudent-virtual-machine:~# apt-get -y install lamp-server^
+패키지 목록을 읽는 중입니다... 완료
+의존성 트리를 만드는 중입니다... 완료
+상태 정보를 읽는 중입니다... 완료        
+주의, 작업 'lamp-server'에 대해 'libperl5.26'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libwind0-heimdal'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'php7.2-common'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libgssapi3-heimdal'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libheimbase1-heimdal'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libfcgi-perl'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'mysql-server-5.7'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libaio1'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libaprutil1-dbd-sqlite3'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'mysql-client-5.7'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libapr1'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'php7.2-opcache'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'mysql-common'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libhx509-5-heimdal'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libapache2-mod-php'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'liblua5.2-0'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'php-common'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'php7.2-cli'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libhcrypto4-heimdal'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libapache2-mod-php7.2'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'php7.2-json'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libroken18-heimdal'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libasn1-8-heimdal'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libheimntlm0-heimdal'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libldap-2.4-2'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'php7.2-readline'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'apache2-data'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libhtml-template-perl'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'apache2-bin'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libaprutil1'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'php-mysql'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libcgi-fast-perl'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'mysql-server'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'mysql-server-core-5.7'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'apache2-utils'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libevent-core-2.1-6'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'apache2'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libkrb5-26-heimdal'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'mysql-client-core-5.7'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'perl-modules-5.26'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libcgi-pm-perl'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libaprutil1-ldap'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'php7.2-mysql'을(를) 선택합니다
+패키지 libapr1는 이미 최신 버전입니다 (1.6.3-2).
+libapr1 패키지는 수동설치로 지정합니다.
+패키지 liblua5.2-0는 이미 최신 버전입니다 (5.2.4-1.1build1).
+liblua5.2-0 패키지는 수동설치로 지정합니다.
+패키지 apache2는 이미 최신 버전입니다 (2.4.29-1ubuntu4.27).
+패키지 apache2-bin는 이미 최신 버전입니다 (2.4.29-1ubuntu4.27).
+apache2-bin 패키지는 수동설치로 지정합니다.
+패키지 apache2-data는 이미 최신 버전입니다 (2.4.29-1ubuntu4.27).
+apache2-data 패키지는 수동설치로 지정합니다.
+패키지 apache2-utils는 이미 최신 버전입니다 (2.4.29-1ubuntu4.27).
+apache2-utils 패키지는 수동설치로 지정합니다.
+패키지 libaprutil1는 이미 최신 버전입니다 (1.6.1-2ubuntu0.1).
+libaprutil1 패키지는 수동설치로 지정합니다.
+패키지 libaprutil1-dbd-sqlite3는 이미 최신 버전입니다 (1.6.1-2ubuntu0.1).
+libaprutil1-dbd-sqlite3 패키지는 수동설치로 지정합니다.
+패키지 libaprutil1-ldap는 이미 최신 버전입니다 (1.6.1-2ubuntu0.1).
+libaprutil1-ldap 패키지는 수동설치로 지정합니다.
+패키지 libasn1-8-heimdal는 이미 최신 버전입니다 (7.5.0+dfsg-1ubuntu0.4).
+libasn1-8-heimdal 패키지는 수동설치로 지정합니다.
+패키지 libgssapi3-heimdal는 이미 최신 버전입니다 (7.5.0+dfsg-1ubuntu0.4).
+libgssapi3-heimdal 패키지는 수동설치로 지정합니다.
+패키지 libhcrypto4-heimdal는 이미 최신 버전입니다 (7.5.0+dfsg-1ubuntu0.4).
+libhcrypto4-heimdal 패키지는 수동설치로 지정합니다.
+패키지 libheimbase1-heimdal는 이미 최신 버전입니다 (7.5.0+dfsg-1ubuntu0.4).
+libheimbase1-heimdal 패키지는 수동설치로 지정합니다.
+패키지 libheimntlm0-heimdal는 이미 최신 버전입니다 (7.5.0+dfsg-1ubuntu0.4).
+libheimntlm0-heimdal 패키지는 수동설치로 지정합니다.
+패키지 libhx509-5-heimdal는 이미 최신 버전입니다 (7.5.0+dfsg-1ubuntu0.4).
+libhx509-5-heimdal 패키지는 수동설치로 지정합니다.
+패키지 libkrb5-26-heimdal는 이미 최신 버전입니다 (7.5.0+dfsg-1ubuntu0.4).
+libkrb5-26-heimdal 패키지는 수동설치로 지정합니다.
+패키지 libldap-2.4-2는 이미 최신 버전입니다 (2.4.45+dfsg-1ubuntu1.11).
+libldap-2.4-2 패키지는 수동설치로 지정합니다.
+패키지 libroken18-heimdal는 이미 최신 버전입니다 (7.5.0+dfsg-1ubuntu0.4).
+libroken18-heimdal 패키지는 수동설치로 지정합니다.
+패키지 libwind0-heimdal는 이미 최신 버전입니다 (7.5.0+dfsg-1ubuntu0.4).
+libwind0-heimdal 패키지는 수동설치로 지정합니다.
+몇몇 패키지를 설치할 수 없습니다. 요청한 상황이 불가능할 수도 있고,
+불안정 배포판을 사용해서 일부 필요한 패키지를 아직 만들지 않았거나,
+아직 Incoming에서 나오지 않은 경우일 수도 있습니다.
+이 상황을 해결하는데 다음 정보가 도움이 될 수도 있습니다:
+
+다음 패키지의 의존성이 맞지 않습니다:
+ libfcgi-perl : 의존: perlapi-5.26.0
+ perl : 망가뜨림: perl-modules-5.26 (< 5.26.2-5) 하지만 5.26.1-6ubuntu0.7 패키지를 설치할 것입니다
+        망가뜨림: perl-modules-5.26:i386 (< 5.26.2-5)
+E: 문제를 바로잡을 수 없습니다. 망가진 고정 패키지가 있습니다.
+root@polystudent-virtual-machine:~# apt-get update
+기존:1 http://mirror.kakao.com/ubuntu bionic InRelease 
+기존:2 https://dl.google.com/linux/chrome/deb stable InRelease                 
+받기:3 http://kr.archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]  
+내려받기 88.7 k바이트, 소요시간 2초 (57.3 k바이트/초)
+패키지 목록을 읽는 중입니다... 완료
+W: http://ftp.daumkakao.com/ubuntu/dists/bionic/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
+W: http://kr.archive.ubuntu.com/ubuntu/dists/bionic-updates/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
+root@polystudent-virtual-machine:~# apt-get -y install lamp-server^
+패키지 목록을 읽는 중입니다... 완료
+의존성 트리를 만드는 중입니다... 완료
+상태 정보를 읽는 중입니다... 완료        
+주의, 작업 'lamp-server'에 대해 'libperl5.26'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libwind0-heimdal'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'php7.2-common'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libgssapi3-heimdal'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libheimbase1-heimdal'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libfcgi-perl'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'mysql-server-5.7'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libaio1'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libaprutil1-dbd-sqlite3'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'mysql-client-5.7'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libapr1'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'php7.2-opcache'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'mysql-common'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libhx509-5-heimdal'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libapache2-mod-php'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'liblua5.2-0'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'php-common'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'php7.2-cli'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libhcrypto4-heimdal'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libapache2-mod-php7.2'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'php7.2-json'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libroken18-heimdal'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libasn1-8-heimdal'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libheimntlm0-heimdal'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libldap-2.4-2'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'php7.2-readline'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'apache2-data'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libhtml-template-perl'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'apache2-bin'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libaprutil1'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'php-mysql'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libcgi-fast-perl'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'mysql-server'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'mysql-server-core-5.7'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'apache2-utils'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libevent-core-2.1-6'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'apache2'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libkrb5-26-heimdal'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'mysql-client-core-5.7'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'perl-modules-5.26'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libcgi-pm-perl'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'libaprutil1-ldap'을(를) 선택합니다
+주의, 작업 'lamp-server'에 대해 'php7.2-mysql'을(를) 선택합니다
+패키지 libapr1는 이미 최신 버전입니다 (1.6.3-2).
+libapr1 패키지는 수동설치로 지정합니다.
+패키지 liblua5.2-0는 이미 최신 버전입니다 (5.2.4-1.1build1).
+liblua5.2-0 패키지는 수동설치로 지정합니다.
+패키지 apache2는 이미 최신 버전입니다 (2.4.29-1ubuntu4.27).
+패키지 apache2-bin는 이미 최신 버전입니다 (2.4.29-1ubuntu4.27).
+apache2-bin 패키지는 수동설치로 지정합니다.
+패키지 apache2-data는 이미 최신 버전입니다 (2.4.29-1ubuntu4.27).
+apache2-data 패키지는 수동설치로 지정합니다.
+패키지 apache2-utils는 이미 최신 버전입니다 (2.4.29-1ubuntu4.27).
+apache2-utils 패키지는 수동설치로 지정합니다.
+패키지 libaprutil1는 이미 최신 버전입니다 (1.6.1-2ubuntu0.1).
+libaprutil1 패키지는 수동설치로 지정합니다.
+패키지 libaprutil1-dbd-sqlite3는 이미 최신 버전입니다 (1.6.1-2ubuntu0.1).
+libaprutil1-dbd-sqlite3 패키지는 수동설치로 지정합니다.
+패키지 libaprutil1-ldap는 이미 최신 버전입니다 (1.6.1-2ubuntu0.1).
+libaprutil1-ldap 패키지는 수동설치로 지정합니다.
+패키지 libasn1-8-heimdal는 이미 최신 버전입니다 (7.5.0+dfsg-1ubuntu0.4).
+libasn1-8-heimdal 패키지는 수동설치로 지정합니다.
+패키지 libgssapi3-heimdal는 이미 최신 버전입니다 (7.5.0+dfsg-1ubuntu0.4).
+libgssapi3-heimdal 패키지는 수동설치로 지정합니다.
+패키지 libhcrypto4-heimdal는 이미 최신 버전입니다 (7.5.0+dfsg-1ubuntu0.4).
+libhcrypto4-heimdal 패키지는 수동설치로 지정합니다.
+패키지 libheimbase1-heimdal는 이미 최신 버전입니다 (7.5.0+dfsg-1ubuntu0.4).
+libheimbase1-heimdal 패키지는 수동설치로 지정합니다.
+패키지 libheimntlm0-heimdal는 이미 최신 버전입니다 (7.5.0+dfsg-1ubuntu0.4).
+libheimntlm0-heimdal 패키지는 수동설치로 지정합니다.
+패키지 libhx509-5-heimdal는 이미 최신 버전입니다 (7.5.0+dfsg-1ubuntu0.4).
+libhx509-5-heimdal 패키지는 수동설치로 지정합니다.
+패키지 libkrb5-26-heimdal는 이미 최신 버전입니다 (7.5.0+dfsg-1ubuntu0.4).
+libkrb5-26-heimdal 패키지는 수동설치로 지정합니다.
+패키지 libldap-2.4-2는 이미 최신 버전입니다 (2.4.45+dfsg-1ubuntu1.11).
+libldap-2.4-2 패키지는 수동설치로 지정합니다.
+패키지 libroken18-heimdal는 이미 최신 버전입니다 (7.5.0+dfsg-1ubuntu0.4).
+libroken18-heimdal 패키지는 수동설치로 지정합니다.
+패키지 libwind0-heimdal는 이미 최신 버전입니다 (7.5.0+dfsg-1ubuntu0.4).
+libwind0-heimdal 패키지는 수동설치로 지정합니다.
+몇몇 패키지를 설치할 수 없습니다. 요청한 상황이 불가능할 수도 있고,
+불안정 배포판을 사용해서 일부 필요한 패키지를 아직 만들지 않았거나,
+아직 Incoming에서 나오지 않은 경우일 수도 있습니다.
+이 상황을 해결하는데 다음 정보가 도움이 될 수도 있습니다:
+
+다음 패키지의 의존성이 맞지 않습니다:
+ libfcgi-perl : 의존: perlapi-5.26.0
+ perl : 망가뜨림: perl-modules-5.26 (< 5.26.2-5) 하지만 5.26.1-6ubuntu0.7 패키지를 설치할 것입니다
+        망가뜨림: perl-modules-5.26:i386 (< 5.26.2-5)
+E: 문제를 바로잡을 수 없습니다. 망가진 고정 패키지가 있습니다.
+root@polystudent-virtual-machine:~# systemctl restart mysql
+Failed to restart mysql.service: Unit mysql.service not found.
+root@polystudent-virtual-machine:~# systemctl restart mysql -server
+Failed to parse signal string "erver".
+root@polystudent-virtual-machine:~# systemctl restart mysql-server
+Failed to restart mysql-server.service: Unit mysql-server.service not found.
+root@polystudent-virtual-machine:~# apt-get update
+기존:1 http://mirror.kakao.com/ubuntu bionic InRelease 
+기존:2 https://dl.google.com/linux/chrome/deb stable InRelease                 
+받기:3 http://kr.archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]  
+내려받기 88.7 k바이트, 소요시간 2초 (54.9 k바이트/초)                  
+패키지 목록을 읽는 중입니다... 완료
+W: http://ftp.daumkakao.com/ubuntu/dists/bionic/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
+W: http://kr.archive.ubuntu.com/ubuntu/dists/bionic-updates/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
+root@polystudent-virtual-machine:~# systemctl restart mysql
+Failed to restart mysql.service: Unit mysql.service not found.
+root@polystudent-virtual-machine:~# apt-get -y install mysql-server
+패키지 목록을 읽는 중입니다... 완료
+의존성 트리를 만드는 중입니다... 완료
+상태 정보를 읽는 중입니다... 완료        
+다음의 추가 패키지가 설치될 것입니다 :
+  libaio1 libcgi-pm-perl libevent-core-2.1-6 libhtml-template-perl
+  mysql-client-5.7 mysql-client-core-5.7 mysql-common mysql-server-5.7
+  mysql-server-core-5.7
+제안하는 패키지:
+  libipc-sharedcache-perl mailx tinyca
+추천하는 패키지:
+  libcgi-fast-perl
+다음 새 패키지를 설치할 것입니다:
+  libaio1 libcgi-pm-perl libevent-core-2.1-6 libhtml-template-perl
+  mysql-client-5.7 mysql-client-core-5.7 mysql-common mysql-server
+  mysql-server-5.7 mysql-server-core-5.7
+0개 업그레이드, 10개 새로 설치, 0개 제거 및 10개 업그레이드 안 함.
+19.7 M바이트 아카이브를 받아야 합니다.
+이 작업 후 156 M바이트의 디스크 공간을 더 사용하게 됩니다.
+받기:1 http://mirror.kakao.com/ubuntu bionic/main amd64 mysql-common all 5.8+1.0.4 [7,308 B]
+받기:2 http://mirror.kakao.com/ubuntu bionic/main amd64 libevent-core-2.1-6 amd64 2.1.8-stable-4build1 [85.9 kB]
+받기:3 http://mirror.kakao.com/ubuntu bionic/main amd64 libcgi-pm-perl all 4.38-1 [185 kB]
+받기:4 http://mirror.kakao.com/ubuntu bionic/main amd64 libhtml-template-perl all 2.97-1 [59.0 kB]
+받기:5 http://kr.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libaio1 amd64 0.3.110-5ubuntu0.1 [6,476 B]
+받기:6 http://kr.archive.ubuntu.com/ubuntu bionic-updates/main amd64 mysql-client-core-5.7 amd64 5.7.42-0ubuntu0.18.04.1 [6,752 kB]
+받기:7 http://kr.archive.ubuntu.com/ubuntu bionic-updates/main amd64 mysql-client-5.7 amd64 5.7.42-0ubuntu0.18.04.1 [2,028 kB]
+받기:8 http://kr.archive.ubuntu.com/ubuntu bionic-updates/main amd64 mysql-server-core-5.7 amd64 5.7.42-0ubuntu0.18.04.1 [7,542 kB]
+받기:9 http://kr.archive.ubuntu.com/ubuntu bionic-updates/main amd64 mysql-server-5.7 amd64 5.7.42-0ubuntu0.18.04.1 [3,011 kB]
+받기:10 http://kr.archive.ubuntu.com/ubuntu bionic-updates/main amd64 mysql-server all 5.7.42-0ubuntu0.18.04.1 [9,944 B]
+내려받기 19.7 M바이트, 소요시간 4초 (4,595 k바이트/초)
+패키지를 미리 설정하는 중입니다...
+Selecting previously unselected package mysql-common.
+(데이터베이스 읽는중 ...현재 206445개의 파일과 디렉터리가 설치되어 있습니다.)
+Preparing to unpack .../0-mysql-common_5.8+1.0.4_all.deb ...
+Unpacking mysql-common (5.8+1.0.4) ...
+Selecting previously unselected package libaio1:amd64.
+Preparing to unpack .../1-libaio1_0.3.110-5ubuntu0.1_amd64.deb ...
+Unpacking libaio1:amd64 (0.3.110-5ubuntu0.1) ...
+Selecting previously unselected package mysql-client-core-5.7.
+Preparing to unpack .../2-mysql-client-core-5.7_5.7.42-0ubuntu0.18.04.1_amd64.deb ...
+Unpacking mysql-client-core-5.7 (5.7.42-0ubuntu0.18.04.1) ...
+Selecting previously unselected package mysql-client-5.7.
+Preparing to unpack .../3-mysql-client-5.7_5.7.42-0ubuntu0.18.04.1_amd64.deb ...
+Unpacking mysql-client-5.7 (5.7.42-0ubuntu0.18.04.1) ...
+Selecting previously unselected package mysql-server-core-5.7.
+Preparing to unpack .../4-mysql-server-core-5.7_5.7.42-0ubuntu0.18.04.1_amd64.deb ...
+Unpacking mysql-server-core-5.7 (5.7.42-0ubuntu0.18.04.1) ...
+Selecting previously unselected package libevent-core-2.1-6:amd64.
+Preparing to unpack .../5-libevent-core-2.1-6_2.1.8-stable-4build1_amd64.deb ...
+Unpacking libevent-core-2.1-6:amd64 (2.1.8-stable-4build1) ...
+mysql-common (5.8+1.0.4) 설정하는 중입니다 ...
+update-alternatives: using /etc/mysql/my.cnf.fallback to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+Selecting previously unselected package mysql-server-5.7.
+(데이터베이스 읽는중 ...현재 206613개의 파일과 디렉터리가 설치되어 있습니다.)
+Preparing to unpack .../mysql-server-5.7_5.7.42-0ubuntu0.18.04.1_amd64.deb ...
+Unpacking mysql-server-5.7 (5.7.42-0ubuntu0.18.04.1) ...
+Selecting previously unselected package libcgi-pm-perl.
+Preparing to unpack .../libcgi-pm-perl_4.38-1_all.deb ...
+Unpacking libcgi-pm-perl (4.38-1) ...
+Selecting previously unselected package libhtml-template-perl.
+Preparing to unpack .../libhtml-template-perl_2.97-1_all.deb ...
+Unpacking libhtml-template-perl (2.97-1) ...
+Selecting previously unselected package mysql-server.
+Preparing to unpack .../mysql-server_5.7.42-0ubuntu0.18.04.1_all.deb ...
+Unpacking mysql-server (5.7.42-0ubuntu0.18.04.1) ...
+libcgi-pm-perl (4.38-1) 설정하는 중입니다 ...
+libhtml-template-perl (2.97-1) 설정하는 중입니다 ...
+libevent-core-2.1-6:amd64 (2.1.8-stable-4build1) 설정하는 중입니다 ...
+libaio1:amd64 (0.3.110-5ubuntu0.1) 설정하는 중입니다 ...
+mysql-server-core-5.7 (5.7.42-0ubuntu0.18.04.1) 설정하는 중입니다 ...
+mysql-client-core-5.7 (5.7.42-0ubuntu0.18.04.1) 설정하는 중입니다 ...
+mysql-client-5.7 (5.7.42-0ubuntu0.18.04.1) 설정하는 중입니다 ...
+mysql-server-5.7 (5.7.42-0ubuntu0.18.04.1) 설정하는 중입니다 ...
+update-alternatives: using /etc/mysql/mysql.cnf to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+Renaming removed key_buffer and myisam-recover options (if present)
+Created symlink /etc/systemd/system/multi-user.target.wants/mysql.service → /lib/systemd/system/mysql.service.
+mysql-server (5.7.42-0ubuntu0.18.04.1) 설정하는 중입니다 ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.1) ...
+root@polystudent-virtual-machine:~# systemctl restart mysql
+root@polystudent-virtual-machine:~# systemctl enable mysql
+Synchronizing state of mysql.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable mysql
+root@polystudent-virtual-machine:~# systemctl status musql
+Unit musql.service could not be found.
+root@polystudent-virtual-machine:~# systemctl status mysql
+● mysql.service - MySQL Community Server
+     Loaded: loaded (/lib/systemd/system/mysql.service; enabled; vendor preset:>
+     Active: active (running) since Tue 2023-06-13 11:41:27 KST; 34s ago
+   Main PID: 7177 (mysqld)
+      Tasks: 27 (limit: 4573)
+     Memory: 174.5M
+        CPU: 301ms
+     CGroup: /system.slice/mysql.service
+             └─7177 /usr/sbin/mysqld --daemonize --pid-file=/run/mysqld/mysqld.>
+
+ 6월 13 11:41:27 polystudent-virtual-machine systemd[1]: Starting MySQL Communi>
+ 6월 13 11:41:27 polystudent-virtual-machine systemd[1]: Started MySQL Communit>
+root@polystudent-virtual-machine:~# apt-get -y install php7.2-common
+패키지 목록을 읽는 중입니다... 완료
+의존성 트리를 만드는 중입니다... 완료
+상태 정보를 읽는 중입니다... 완료        
+다음의 추가 패키지가 설치될 것입니다 :
+  php-common
+다음 새 패키지를 설치할 것입니다:
+  php-common php7.2-common
+0개 업그레이드, 2개 새로 설치, 0개 제거 및 10개 업그레이드 안 함.
+903 k바이트 아카이브를 받아야 합니다.
+이 작업 후 6,712 k바이트의 디스크 공간을 더 사용하게 됩니다.
+받기:1 http://mirror.kakao.com/ubuntu bionic/main amd64 php-common all 1:60ubuntu1 [12.1 kB]
+받기:2 http://kr.archive.ubuntu.com/ubuntu bionic-updates/main amd64 php7.2-common amd64 7.2.24-0ubuntu0.18.04.17 [891 kB]
+내려받기 903 k바이트, 소요시간 2초 (404 k바이트/초)
+Selecting previously unselected package php-common.
+(데이터베이스 읽는중 ...현재 206748개의 파일과 디렉터리가 설치되어 있습니다.)
+Preparing to unpack .../php-common_1%3a60ubuntu1_all.deb ...
+Unpacking php-common (1:60ubuntu1) ...
+Selecting previously unselected package php7.2-common.
+Preparing to unpack .../php7.2-common_7.2.24-0ubuntu0.18.04.17_amd64.deb ...
+Unpacking php7.2-common (7.2.24-0ubuntu0.18.04.17) ...
+php-common (1:60ubuntu1) 설정하는 중입니다 ...
+Created symlink /etc/systemd/system/timers.target.wants/phpsessionclean.timer → /lib/systemd/system/phpsessionclean.timer.
+php7.2-common (7.2.24-0ubuntu0.18.04.17) 설정하는 중입니다 ...
+
+Creating config file /etc/php/7.2/mods-available/calendar.ini with new version
+
+Creating config file /etc/php/7.2/mods-available/ctype.ini with new version
+
+Creating config file /etc/php/7.2/mods-available/exif.ini with new version
+
+Creating config file /etc/php/7.2/mods-available/fileinfo.ini with new version
+
+Creating config file /etc/php/7.2/mods-available/ftp.ini with new version
+
+Creating config file /etc/php/7.2/mods-available/gettext.ini with new version
+
+Creating config file /etc/php/7.2/mods-available/iconv.ini with new version
+
+Creating config file /etc/php/7.2/mods-available/pdo.ini with new version
+
+Creating config file /etc/php/7.2/mods-available/phar.ini with new version
+
+Creating config file /etc/php/7.2/mods-available/posix.ini with new version
+
+Creating config file /etc/php/7.2/mods-available/shmop.ini with new version
+
+Creating config file /etc/php/7.2/mods-available/sockets.ini with new version
+
+Creating config file /etc/php/7.2/mods-available/sysvmsg.ini with new version
+
+Creating config file /etc/php/7.2/mods-available/sysvsem.ini with new version
+
+Creating config file /etc/php/7.2/mods-available/sysvshm.ini with new version
+
+Creating config file /etc/php/7.2/mods-available/tokenizer.ini with new version
+root@polystudent-virtual-machine:~# dpkg -l php
+dpkg-query: php와 일치하는 패키지를 찾지 못했습니다
+root@polystudent-virtual-machine:~# dpkg -l php-common
+희망상태=알수없음(U)/설치(I)/지우기(R)/깨끗이(P)/고정(H)
+| 상태=아님(N)/설치(I)/설정(C)/풀림(U)/절반설정(F)/일부설치(H)/트리거대기(W)/
+| /    트리거밀림(T)
+|/ 오류?=(없음)/다시설치필요(R) (상태, 오류가 대문자=불량)
+||/ 이름           버전         Architecture 설명
++++-==============-============-============-=================================
+ii  php-common     1:60ubuntu1  all          Common files for PHP packages
+root@polystudent-virtual-machine:~# 
