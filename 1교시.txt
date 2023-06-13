@@ -1,0 +1,16 @@
+root@polystudent-virtual-machine:~/바탕화면# cd
+root@polystudent-virtual-machine:~# apt-get -y install dconf-editor
+패키지 목록을 읽는 중입니다... 완료
+의존성 트리를 만드는 중입니다... 완료
+상태 정보를 읽는 중입니다... 완료        
+패키지 dconf-editor는 이미 최신 버전입니다 (3.28.0-1).
+0개 업그레이드, 0개 새로 설치, 0개 제거 및 10개 업그레이드 안 함.
+root@polystudent-virtual-machine:~# dcont-eitor
+dcont-eitor: 명령을 찾을 수 없습니다
+root@polystudent-virtual-machine:~# dconf-editor
+
+** (dconf-editor:2171): WARNING **: 09:59:50.308: source-manager.vala:98: Schema with id “org.gnome.desktop.remote-desktop” contains neither keys nor children.
+root@polystudent-virtual-machine:~# ufw allow 5900/tcp
+존재하는 규칙을 추가하는 걸 건너뜁니다
+존재하는 규칙을 추가하는 걸 건너뜁니다 (v6)
+root@polystudent-virtual-machine:~# 
